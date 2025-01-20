@@ -1576,6 +1576,55 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%); /* Set text color with a mix of default color and transparency */
 }
 
+/* Modal Container */
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  border: 5px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Caption */
+#caption {
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+
+/* Close Button */
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 /*--------------------------------------------------------------
 # Starter Section Section
